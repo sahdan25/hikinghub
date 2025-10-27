@@ -13,9 +13,10 @@ header {
     padding: 40px 20px;
     color: white;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-    /* Gabungkan gambar + gradient supaya gambar muncul */
+
+    /* ✅ Gambar + gradient diperbaiki path-nya */
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                url('images/background.jpg') no-repeat center center;
+                url('./images/background.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -71,15 +72,6 @@ header p {
 .photo-card:hover .caption {
     color: #4CAF50;
     transform: scale(1.05);
-}
-
-/* ========== FOOTER ========== */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
 }
 
 /* ========== MODAL FOTO BESAR ========== */
@@ -144,53 +136,9 @@ footer {
     color: #bbb;
 }
 
-
-
-
-/* Container utama */
+/* ========== TENTANG (ABOUT SECTION) ========== */
 .section-about {
-    background-color: #d7e6ef; /* biru muda lembut */
-    padding: 40px 20px;
-    border-radius: 10px;
-    max-width: 900px;
-    margin: 40px auto 20px auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    font-family: 'Poppins', sans-serif;
-    color: #2c3e50; /* warna teks gelap tapi tidak terlalu kontras */
-}
-
-/* Judul */
-.section-about h2 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-    color: #1a2a40;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
-}
-
-/* Paragraf */
-.section-about p {
-    font-size: 1.15rem;
-    line-height: 1.6;
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-/* Footer */
-footer {
-    background-color: #222; /* lebih pekat */
-    color: #eee;
-    text-align: center;
-    padding: 20px 10px;
-    font-size: 1rem;
-    letter-spacing: 0.03em;
-    box-shadow: inset 0 1px 3px rgba(255,255,255,0.1);
-    font-family: 'Poppins', sans-serif;
-}
-
-.section-about {
-    background-color: #d7e6ef; 
+    background-color: #d7e6ef;
     padding: 40px 20px;
     border-radius: 10px;
     max-width: 900px;
@@ -198,11 +146,11 @@ footer {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     font-family: 'Poppins', sans-serif;
     color: #2c3e50;
-    text-align: center; /* PENTING: agar semua teks rata tengah */
+    text-align: center;
 }
 
 .section-about h2 {
-    font-size: 1.6rem; 
+    font-size: 2rem;
     margin-bottom: 15px;
     font-weight: 700;
     letter-spacing: 1.2px;
@@ -211,33 +159,28 @@ footer {
 }
 
 .section-about p {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     max-width: 720px;
     margin: 0 auto;
 }
 
-
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  background: #f4f4f9;
-  color: #333;
-}
-
-header {
-  text-align: center;
-  padding: 1rem;
-  background: linear-gradient(135deg, #4caf50, #2e7d32);
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
+/* ========== PETA / MAP SECTION ========== */
 #map {
-  height: 90vh; /* tinggi peta */
-  width: 100%;
-  border-radius: 12px;
-  margin-top: 10px;
+    height: 90vh; /* tinggi peta */
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+    box-shadow: inset 0 1px 3px rgba(255,255,255,0.1);
+    font-family: 'Poppins', sans-serif;
 }
