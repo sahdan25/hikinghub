@@ -190,7 +190,7 @@ footer {
 }
 
 .section-about {
-    background-color: #d7e6ef; /* biru muda lembut */
+    background-color: #d7e6ef; 
     padding: 40px 20px;
     border-radius: 10px;
     max-width: 900px;
@@ -202,7 +202,7 @@ footer {
 }
 
 .section-about h2 {
-    font-size: 1.6rem; /* diperkecil dari 2.2rem */
+    font-size: 1.6rem; 
     margin-bottom: 15px;
     font-weight: 700;
     letter-spacing: 1.2px;
@@ -215,4 +215,29 @@ footer {
     line-height: 1.6;
     max-width: 720px;
     margin: 0 auto;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+#map {
+  height: 90vh; /* tinggi peta */
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 10px;
 }
