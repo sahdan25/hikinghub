@@ -186,15 +186,4 @@ footer {
 }
 
 /*WARNA*/
-body {
-  background: linear-gradient(to bottom, #f467cf, #ff4dca);
-  color: #2C2C2C;
-}
-header {
-  background-color: #ef5ebe;
-  color: white;
-}
-button, .photo-card:hover {
-  background-color: #f441b6;
-  color: white;
-}
+

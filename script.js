@@ -51,7 +51,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const gunungData = [
   {
     nama: "Gunung Sumbing",
-    lokasi: [-7.382, 109.992],
+    lokasi: [-7.384274698307768, 110.07266856494984],
     info: "📍 Jalur Gajah Mungkur, Wonosobo<br>🗓️ 20 Juni 2025<br>🌤️ Cuaca: Cerah"
   },
   {
@@ -61,22 +61,22 @@ const gunungData = [
   },
   {
     nama: "Gunung Buthak",
-    lokasi: [-7.841, 112.518],
+    lokasi: [-7.918125076686742, 112.4492792123533],
     info: "📍 Jalur Panderman, Batu<br>🗓️ 5 September 2025<br>🌤️ Cuaca: Cerah"
   },
   {
     nama: "Gunung Cikuray",
-    lokasi: [-7.321, 107.868],
+    lokasi: [-7.320456290580792, 107.85991382668442],
     info: "📍 Jalur Tapak Gerot, Garut<br>🗓️ 11 Januari 2025<br>🌤️ Cerah Berawan"
   },
   {
     nama: "Gunung Papandayan",
-    lokasi: [-7.319, 107.730],
+    lokasi: [-7.318964319763608, 107.73117169649817],
     info: "📍 Jalur TWA Papandayan, Garut<br>🗓️ 11 Januari 2025<br>🌤️ Berawan"
   },
   {
     nama: "Gunung Patuha",
-    lokasi: [-7.166, 107.402],
+    lokasi: [-7.160281196095474, 107.40006517999811],
     info: "📍 Jalur Gunung Sepuh, Ciwidey<br>🗓️ 23 Juni 2025<br>🌤️ Berkabut"
   },
   {
