@@ -4,7 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Koleksi Pendakian - Sahdan Anasri</title>
+
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Leaflet CSS (untuk peta interaktif) -->
+  <link 
+    rel="stylesheet" 
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+  />
 </head>
 
 <body>
@@ -18,127 +26,136 @@
   <!-- GALERI FOTO -->
   <main class="gallery-container">
 
+    <!-- GUNUNG 1 -->
     <div class="photo-card sumbing" onclick="openModal('images/foto-gunung-1.jpg', 'Puncak Rajawali.')">
       <img src="images/foto-gunung-1.jpg" alt="Puncak Sumbing">
       <div class="caption">Puncak Sumbing, 3371 Mdpl</div>
-       <div class="info-box">
-      <p>📍 Jalur: Gajah Mungkur, Wonosobo</p>
-      <p>🗓️ Tanggal: 20 Juni 2025</p>
-      <p>🌤️ Cuaca: Cerah </p>
-      <p>🧭 Estimasi Waktu: 6 jam ( sunset cam)</p>
-    </div>
-  </div>
+      <div class="info-box">
+        <p>📍 Jalur: Gajah Mungkur, Wonosobo</p>
+        <p>🗓️ Tanggal: 20 Juni 2025</p>
+        <p>🌤️ Cuaca: Cerah</p>
+        <p>🧭 Estimasi Waktu: 6 jam (sunset camp)</p>
+      </div>
     </div>
 
+    <!-- GUNUNG 2 -->
     <div class="photo-card ciremai" onclick="openModal('images/foto-gunung-2.jpg', 'Pendakian pertama saya.')">
       <img src="images/foto-gunung-2.jpg" alt="Puncak Ciremai">
       <div class="caption">Puncak Ciremai, 3078 Mdpl</div>
-       <div class="info-box">
-      <p>📍 Jalur: Sahdarehe, Majalengka</p>
-      <p>🗓️ Tanggal: 14 Juni 2024</p>
-      <p>🌤️ Cuaca: Berkabut </p>
-      <p>🧭 Estimasi Waktu:8 jam (Cam Area Kawah Burung)</p>
-    </div>
-  </div>
+      <div class="info-box">
+        <p>📍 Jalur: Sadarehe, Majalengka</p>
+        <p>🗓️ Tanggal: 14 Juni 2024</p>
+        <p>🌤️ Cuaca: Berkabut</p>
+        <p>🧭 Estimasi Waktu: 8 jam (Camp Area Kawah Burung)</p>
+      </div>
     </div>
 
-    <div class="photo-card buthak" onclick="openModal('images/foto-gunung-3.jpg', ' Gunung pertama yang saya daki di jawa timur.')">
+    <!-- GUNUNG 3 -->
+    <div class="photo-card buthak" onclick="openModal('images/foto-gunung-3.jpg', 'Pendakian di Gunung Buthak dengan kabut tebal.')">
       <img src="images/foto-gunung-3.jpg" alt="Gunung Buthak">
       <div class="caption">Puncak Buthak, 2868 Mdpl</div>
-       <div class="info-box">
-      <p>📍 Jalur: Panderman, Kota Batu </p>
-      <p>🗓️ Tanggal:05 September 2025</p>
-      <p>🌤️ Cuaca: Cerah </p>
-      <p>🧭 Estimasi Waktu: 6 jam ( dengan ojek )</p>
-    </div>
-  </div>
+      <div class="info-box">
+        <p>📍 Jalur: Panderman, Kota Batu</p>
+        <p>🗓️ Tanggal: 05 September 2025</p>
+        <p>🌤️ Cuaca: Cerah</p>
+        <p>🧭 Estimasi Waktu: 6 jam (dengan ojek)</p>
+      </div>
     </div>
 
-    <div class="photo-card cikuray" onclick="openModal('images/foto-gunung-4.jpg', 'jalur yang banyak anak tangga nya.')">
+    <!-- GUNUNG 4 -->
+    <div class="photo-card cikuray" onclick="openModal('images/foto-gunung-4.jpg', 'Suasana basecamp sebelum pendakian dimulai.')">
       <img src="images/foto-gunung-4.jpg" alt="Gunung Cikuray">
       <div class="caption">Puncak Cikuray, 2821 Mdpl</div>
-       <div class="info-box">
-      <p>📍 Jalur: Tapak Gerot, Garut</p>
-      <p>🗓️ Tanggal: 11 Januari 2025</p>
-      <p>🌤️ Cuaca: Cerah berawan</p>
-      <p>🧭 Estimasi Waktu: 5 jam (Pendakian Tektok)  </p>
-    </div>
-  </div>
+      <div class="info-box">
+        <p>📍 Jalur: Tapak Gerot, Garut</p>
+        <p>🗓️ Tanggal: 11 Januari 2025</p>
+        <p>🌤️ Cuaca: Cerah berawan</p>
+        <p>🧭 Estimasi Waktu: 5 jam (Pendakian Tektok)</p>
+      </div>
     </div>
 
-    <div class="photo-card papandayan" onclick="openModal('images/foto-gunung-5.jpg', 'gunung yang cocok untuk pemula.')">
+    <!-- GUNUNG 5 -->
+    <div class="photo-card papandayan" onclick="openModal('images/foto-gunung-5.jpg', 'Berfoto bersama di tengah perjalanan pendakian.')">
       <img src="images/foto-gunung-5.jpg" alt="Gunung Papandayan">
       <div class="caption">Puncak Papandayan, 2665 Mdpl</div>
-       <div class="info-box">
-      <p>📍 Jalur: Twa Gunung Papandayan, Garut</p>
-      <p>🗓️ Tanggal: 11 Januari 2025</p>
-      <p>🌤️ Cuaca:Berawan </p>
-      <p>🧭 Estimasi Waktu: 1 jam (Pendakian Tektok)</p>
-    </div>
-  </div>
+      <div class="info-box">
+        <p>📍 Jalur: TWA Gunung Papandayan, Garut</p>
+        <p>🗓️ Tanggal: 11 Januari 2025</p>
+        <p>🌤️ Cuaca: Berawan</p>
+        <p>🧭 Estimasi Waktu: 1 jam (Pendakian Tektok)</p>
+      </div>
     </div>
 
-    <div class="photo-card patuha" onclick="openModal('images/foto-gunung-6.jpg', 'Full kabut saat menuju puncak patuha.')">
+    <!-- GUNUNG 6 -->
+    <div class="photo-card patuha" onclick="openModal('images/foto-gunung-6.jpg', 'Pemandangan awan di atas ketinggian.')">
       <img src="images/foto-gunung-6.jpg" alt="Gunung Patuha">
       <div class="caption">Puncak Patuha, 2434 Mdpl</div>
-       <div class="info-box">
-      <p>📍 Jalur: Gunung sepuh, Ciwidey</p>
-      <p>🗓️ Tanggal: 23 Juni 2025</p>
-      <p>🌤️ Cuaca: Berkabut </p>
-      <p>🧭 Estimasi Waktu: 2 jam (Pendakian Tektok) </p>
-    </div>
-  </div>
+      <div class="info-box">
+        <p>📍 Jalur: Gunung Sepuh, Ciwidey</p>
+        <p>🗓️ Tanggal: 23 Juni 2025</p>
+        <p>🌤️ Cuaca: Berkabut</p>
+        <p>🧭 Estimasi Waktu: 2 jam (Pendakian Tektok)</p>
+      </div>
     </div>
 
-    <div class="photo-card pamoroan" onclick="openModal('images/foto-gunung-7.jpg', 'bukit pamoroan majalengka.')">
+    <!-- GUNUNG 7 -->
+    <div class="photo-card pamoroan" onclick="openModal('images/foto-gunung-7.jpg', 'Turun gunung dengan panorama sore yang indah.')">
       <img src="images/foto-gunung-7.jpg" alt="Gunung Pamoroan">
       <div class="caption">Puncak Pamoroan, 1001 Mdpl</div>
-       <div class="info-box">
-      <p>📍 Jalur: Cingambul, Majalengka</p>
-      <p>🗓️ Tanggal: 03 Agustus 2025</p>
-      <p>🌤️ Cuaca: Cerah </p>
-      <p>🧭 Estimasi Waktu: 30 menit (Pendakian Tektok)</p>
-    </div>
-  </div>
+      <div class="info-box">
+        <p>📍 Jalur: Cingambul, Majalengka</p>
+        <p>🗓️ Tanggal: 03 Agustus 2025</p>
+        <p>🌤️ Cuaca: Cerah</p>
+        <p>🧭 Estimasi Waktu: 30 menit (Pendakian Tektok)</p>
+      </div>
     </div>
 
-    <div class="photo-card next " onclick="openModal('images/foto-gunung-8.jpg', 'next mdpl.')">
+    <!-- GUNUNG 8 -->
+    <div class="photo-card next" onclick="openModal('images/foto-gunung-8.jpg', 'next.')">
       <img src="images/foto-gunung-8.jpg" alt="next">
-      <div class="caption">next, Mdpl</div>
+      <div class="caption">Next Destination ⛰️</div>
     </div>
 
   </main>
 
+  <!-- PETA PENDAKIAN -->
+  <section id="map-section">
+    <h2 style="text-align:center; margin-top:40px;">🌄 Peta Jejak Pendakian Sahdan Anasri</h2>
+    <div id="map" style="height:80vh; width:90%; margin:20px auto; border-radius:10px;"></div>
+  </section>
+
   <!-- TENTANG PERJALANAN -->
   <div class="section-about">
-  <h2>Tentang Perjalanan Ini</h2>
-  <p>Setiap puncak punya cerita — dari dinginnya kabut pagi, langkah berat di tanjakan, hingga rasa lega saat mengijakan kaki di puncak nya.</p>
-</div>
+    <h2>Tentang Perjalanan Ini</h2>
+    <p>Setiap puncak punya cerita — dari dinginnya kabut pagi, langkah berat di tanjakan, hingga rasa lega saat menginjakkan kaki di puncaknya.</p>
+  </div>
+
   <!-- FOOTER -->
   <footer>
     <p>&copy; Koleksi Pribadi Sahdan Anasri. Dibuat dengan semangat pendakian.</p>
   </footer>
 
-  <!-- MODAL UNTUK FOTO BESAR -->
+  <!-- MODAL FOTO -->
   <div id="imageModal" class="modal" onclick="closeModal()">
-    <span class="close" onclick="closeModal()">&times;</span>
+    <span class="close">&times;</span>
     <img class="modal-content" id="modalImage" alt="Foto Pendakian">
     <div id="captionText" class="caption-text"></div>
   </div>
 
+  <!-- Input Pencarian -->
   <input type="text" id="searchBox" placeholder="Cari gunung...">
 
+  <!-- LEAFLET JS (untuk peta) -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-  <!-- SCRIPT -->
+  <!-- SCRIPT UTAMA -->
   <script src="script.js"></script>
 
+  <!-- SCRIPT TAMBAHAN: Efek klik -->
   <script>
-    // Efek klik untuk menandai kartu aktif
     document.querySelectorAll('.photo-card').forEach(card => {
       card.addEventListener('click', () => {
-        // Hapus 'active' dari semua kartu
         document.querySelectorAll('.photo-card').forEach(c => c.classList.remove('active'));
-        // Tambahkan 'active' ke kartu yang diklik
         card.classList.toggle('active');
       });
     });
@@ -146,4 +163,3 @@
 
 </body>
 </html>
-
