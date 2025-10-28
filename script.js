@@ -43,8 +43,7 @@ const map = L.map('map').setView([-7.3, 109.9], 7);
 
 // Tambahkan layer peta dasar
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 13,
-  attribution: '© OpenStreetMap'
+  attribution: '© OpenStreetMap contributors'
 }).addTo(map);
 
 // Data lokasi gunung
@@ -93,3 +92,37 @@ gunungData.forEach(g => {
     .bindPopup(`<b>${g.nama}</b><br>${g.info}`);
 });
 
+//cuaca//
+
+// === Cuaca Real-time dari OpenWeatherMap ===
+
+// Ganti dengan API key kamu dari OpenWeatherMap
+const API_KEY = "MASUKKAN_API_KEY_KAMU_DI_SINI";
+
+// Ambil dan tampilkan cuaca real-time untuk tiap gunung
+gunungData.forEach(g => {
+  const [lat, lon] = g.lokasi;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=id&appid=${API_KEY}`;
+
+  fetch(url)
+    .then(res => {
+      if (!res.ok) throw new Error("Gagal ambil data cuaca");
+      return res.json();
+    })
+    .then(data => {
+      const suhu = data.main?.temp ?? 0;
+      const kondisi = data.weather?.[0]?.description ?? "Tidak diketahui";
+      const icon = data.weather?.[0]?.icon ?? "01d";
+
+      // Tambahkan info cuaca ke popup marker yang sudah ada
+      const marker = L.marker(g.lokasi).addTo(map);
+      const popupContent = `
+        <b>${g.nama}</b><br>${g.info}<hr>
+        🌡️ Suhu Sekarang: ${suhu.toFixed(1)}°C<br>
+        ☁️ Kondisi: ${kondisi}<br>
+        <img src="https://openweathermap.org/img/wn/${icon}@2x.png" width="45">
+      `;
+      marker.bindPopup(popupContent);
+    })
+    .catch(err => console.error("Gagal ambil cuaca:", err));
+});
